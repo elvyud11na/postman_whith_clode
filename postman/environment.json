@@ -1,0 +1,46 @@
+{
+	"id": "186c208b-8cd7-4faa-9545-29f1b3be82bf",
+	"name": "Stepik",
+	"values": [
+		{
+			"key": "baseUrl",
+			"value": "https://restapi.tech",
+			"type": "default",
+			"enabled": false
+		},
+		{
+			"key": "CompanyList",
+			"value": "{\"type\":\"object\",\"properties\":{\"data\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"company_id\":{\"type\":\"integer\"},\"company_name\":{\"type\":\"string\"},\"company_address\":{\"type\":\"string\"},\"company_status\":{\"type\":\"string\",\"enum\":[\"ACTIVE\",\"CLOSED\",\"BANKRUPT\"]},\"description\":{\"type\":\"string\"},\"description_lang\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"translation_lang\":{\"type\":\"string\",\"enum\":[\"EN\",\"RU\",\"PL\",\"UA\"]},\"translation\":{\"type\":\"string\"}},\"required\":[\"translation_lang\",\"translation\"]}}},\"required\":[\"company_id\",\"company_name\",\"company_address\",\"company_status\"]}},\"meta\":{\"type\":\"object\",\"properties\":{\"limit\":{\"type\":\"integer\"},\"offset\":{\"type\":\"integer\"},\"total\":{\"type\":\"integer\"}},\"required\":[\"total\"]}},\"required\":[\"data\",\"meta\"]}",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "Company",
+			"value": "{\"type\":\"object\",\"properties\":{\"company_id\":{\"type\":\"integer\"},\"company_name\":{\"type\":\"string\"},\"company_address\":{\"type\":\"string\"},\"company_status\":{\"type\":\"string\",\"enum\":[\"ACTIVE\",\"BANKRUPT\",\"CLOSED\"]},\"description\":{\"type\":\"string\"},\"description_lang\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"translation_lang\":{\"type\":\"string\",\"enum\":[\"EN\",\"RU\",\"PL\",\"UA\"]},\"translation\":{\"type\":\"string\"}},\"required\":[\"translation_lang\",\"translation\"]}}},\"required\":[\"company_id\",\"company_name\",\"company_address\",\"company_status\"]}",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "UsersList",
+			"value": "{\"type\":\"object\",\"properties\":{\"meta\":{\"type\":\"object\",\"properties\":{\"limit\":{\"type\":\"integer\"},\"offset\":{\"type\":\"integer\"},\"total\":{\"type\":\"integer\"}},\"required\":[\"total\"]},\"data\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"first_name\":{\"type\":[\"string\",\"null\"]},\"last_name\":{\"type\":\"string\"},\"company_id\":{\"type\":[\"integer\",\"null\"]},\"user_id\":{\"type\":\"integer\"}},\"required\":[\"last_name\",\"user_id\"]}}},\"required\":[\"meta\",\"data\"]}",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "ResponseUser",
+			"value": "{\"type\":\"object\",\"properties\":{\"first_name\":{\"type\":\"string\"},\"last_name\":{\"type\":\"string\"},\"company_id\":{\"type\":\"integer\"},\"user_id\":{\"type\":\"integer\"}},\"required\":[\"last_name\",\"user_id\"]}",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "HTTPValidationError",
+			"value": "{\"type\":\"object\",\"properties\":{\"detail\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"loc\":{\"type\":\"array\",\"items\":{\"type\":[\"string\",\"integer\"]}},\"msg\":{\"type\":\"string\"}},\"required\":[\"loc\",\"msg\",\"type\"]}}},\"required\":[\"detail\"]}",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"color": null,
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2026-09-15T08:32:13.227Z",
+	"_postman_exported_using": "Postman/12.27.6"
+}
